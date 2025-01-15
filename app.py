@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, jsonify
-from utils import calculate_monthly_payment, calculate_total_cost
+from health_test import calculate_monthly_payment, calculate_total_cost
 
 app = Flask(__name__)
 

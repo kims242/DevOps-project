@@ -1,5 +1,5 @@
 import unittest
-from utils import calculate_monthly_payment, calculate_total_cost
+from health_test import calculate_monthly_payment, calculate_total_cost
 
 class TestLoanCalculatorUtils(unittest.TestCase):
     def test_calculate_monthly_payment_with_interest(self):
