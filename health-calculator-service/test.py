@@ -1,7 +1,7 @@
 import unittest
-from health_test import calculate_bmi, calculate_bmr
+from health_utils import calculate_bmi, calculate_bmr
  
-class Testhealth_test(unittest.TestCase):
+class TestHealthUtils(unittest.TestCase):
     def test_calculate_bmi(self):
         self.assertAlmostEqual(calculate_bmi(1.75, 70), 22.86, places=2)
  
