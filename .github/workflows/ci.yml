@@ -23,7 +23,6 @@ jobs:
 
       - name: Test
         run: |
-            pip install -r requirements.txt \
             python -m venv .venv \
             source .venv/bin/activate \
             python -m unittest health-calculator-service/test.py
