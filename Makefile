@@ -33,7 +33,7 @@ clean:
 	stop rm rmi
 
 test:
-	python -m unittest discover
+	python -m unittest health-calculator-service/test.py
 
 .PHONY:
 	venv build run stop rm rmi clean
