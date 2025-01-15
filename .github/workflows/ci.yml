@@ -21,8 +21,5 @@ jobs:
         run: make install
           
 
-      - name: Test
-        run: |
-            python -m venv .venv \
-            source .venv/bin/activate \
-            python -m unittest health-calculator-service/test.py
+      - name: init
+        run: make init
