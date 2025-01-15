@@ -1,7 +1,7 @@
 import unittest
 from health_test import calculate_bmi, calculate_bmr
  
-class Testutils(unittest.TestCase):
+class Testhealth_test(unittest.TestCase):
     def test_calculate_bmi(self):
         self.assertAlmostEqual(calculate_bmi(1.75, 70), 22.86, places=2)
  
@@ -14,4 +14,4 @@ class Testutils(unittest.TestCase):
         self.assertAlmostEqual(calculate_bmr(165, 60, 30, 'female'), 1383.68, places=2)
  
 if __name__ == '__main__':
-    unittest.main('Test_utils')
+    unittest.main()
