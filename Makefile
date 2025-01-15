@@ -2,16 +2,15 @@ IMAGE_NAME = mon-image
 CONTAINER_NAME = mon-conteneur
 
 .PHONY: init
+install:
+	pip install -r requirements.txt
+
 init:
 	python3 -m venv .venv
 	. .venv/bin/activate
 
 build:
 	docker build -t $(IMAGE_NAME) .
-
-install:
-	pip install -r requirements.txt
-
 
 run:
 	docker run --name $(CONTAINER_NAME) -p 8000:8000 $(IMAGE_NAME)
